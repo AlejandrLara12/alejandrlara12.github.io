@@ -929,7 +929,7 @@ h1, h2, h3, h4, span {
   background-size: cover;
   background-position: center 0px;
   background-attachment: fixed;
-  background-repeat: round;
+  background-repeat: repeat-y;
   position: relative; }
   .first-window .top-menu {
     display: flex;
