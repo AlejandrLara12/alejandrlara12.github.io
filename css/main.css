@@ -927,7 +927,9 @@ h1, h2, h3, h4, span {
   height: 100vh;
   background-image: url(/img/bg-img/desk-black-small.jpg);
   background-size: cover;
-  background-position: bottom center;
+  background-position: center 0px;
+  background-attachment: fixed;
+  background-repeat: round;
   position: relative; }
   .first-window .top-menu {
     display: flex;
@@ -940,7 +942,7 @@ h1, h2, h3, h4, span {
       max-width: 200px; }
       .first-window .top-menu .name-title-container .myname {
         color: #f4f4f4;
-        font-weight: 300; }
+        font-weight: 400; }
       .first-window .top-menu .name-title-container .line-under-name {
         width: 100%;
         height: 1px;
@@ -950,7 +952,7 @@ h1, h2, h3, h4, span {
       .first-window .top-menu .name-title-container .whatido {
         color: #f4f4f4;
         font-size: 20px;
-        font-weight: 100;
+        font-weight: 200;
         line-height: 1; }
     .first-window .top-menu .menu-icon {
       padding: 5px 0 0; }
@@ -969,7 +971,7 @@ h1, h2, h3, h4, span {
   .first-window .intro-text {
     color: #f4f4f4;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 200;
     text-align: center;
     max-width: 500px;
     padding: 10px;
@@ -987,12 +989,12 @@ h1, h2, h3, h4, span {
     bottom: 8vh;
     left: 50%;
     transform: translateX(-50%); }
-    .first-window .buttons [class^='button'] {
+    .first-window .buttons [class^='button-'] {
       width: 150px;
       padding: 10px;
       border: 2px solid;
       border-radius: 3px;
-      margin: 0 0 20px;
+      margin: 0 0 15px;
       color: #f4f4f4;
       font-weight: 200; }
     .first-window .buttons .button-red {
@@ -1000,11 +1002,12 @@ h1, h2, h3, h4, span {
       border-color: rgba(211, 54, 54, 0.7); }
     .first-window .buttons .button-white {
       background-color: transparent;
-      border-color: #f4f4f4; }
+      border-color: rgba(244, 244, 244, 0.7); }
   .first-window .icon-arrow {
     height: 30px;
     width: auto;
     position: absolute;
     bottom: 3vh;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    opacity: 0.7; }
