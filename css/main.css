@@ -935,7 +935,7 @@ h1, h2, h3, h4, span {
     box-sizing: border-box;
     justify-content: space-between;
     width: 100%;
-    padding: 5%; }
+    padding: 20px 5% 0; }
     .first-window .top-menu .name-title-container {
       max-width: 200px; }
       .first-window .top-menu .name-title-container .myname {
