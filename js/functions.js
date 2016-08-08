@@ -34,8 +34,8 @@ var main = function() {
 
 
 
-funcion bolita negra de la esquina
-$(window).scroll(function(){
+//funcion bolita negra de la esquina
+//$(window).scroll(function(){
     // var target = $('#contacto');
     // var duracion = 400;
     // var wScroll = $(this).scrollTop();
@@ -56,7 +56,9 @@ $(window).scroll(function(){
     //   //console.log('yo');
     //   $('record-container').css({'background-position':'center 0px'});
     // }
-});
+//});
+
+
 // $(window).scroll(function(){
 //     var wScroll = $(this).scrollTop();
 //     // move the background-image slowly
@@ -67,7 +69,7 @@ $(window).scroll(function(){
 //     }
 // });
 // my code for lara12
-$('.arrow-down').click(function(){
+$('.icon-arrow-down').click(function(){
     var target = $('#contacto')
     $('html,body').animate({
         scrollTop: target.offset().top
