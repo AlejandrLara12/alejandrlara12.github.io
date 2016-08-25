@@ -80,7 +80,7 @@ $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     console.log(wScroll);
     // move the background-image slowly
-    if( wScroll > ($('.first-window').offset().top - $(window).height()) ){
+    if( wScroll > ($('#header').offset().top - $(window).height()) ){
       // $('.record-container').css({'background-position':'center '+ (wScroll - $('.record-container').offset().top)  +'px'});
       //console.log('yo');
       $('.first-window').css({'background-position':'center -'+ wScroll/5 +'px'});

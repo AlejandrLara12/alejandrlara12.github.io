@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #292929;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -71,7 +71,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #292929;
     text-decoration: underline; }
 
 /**
@@ -169,7 +169,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #292929;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -474,7 +474,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #292929;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -533,7 +533,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #292929;
     text-decoration: underline; }
 
 /**
@@ -631,7 +631,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #292929;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -922,92 +922,102 @@ h1, h2, h3, h4, span {
   .highlight .il {
     color: #099; }
 
-.first-window {
-  width: 100vw;
+#header {
+  width: 100%;
   height: 100vh;
+  min-height: 540px;
   background-image: url(/img/bg-img/desk-black-small.jpg);
   background-size: cover;
   background-position: center 0px;
   background-attachment: fixed;
-  background-repeat: repeat-y;
-  position: relative; }
-  .first-window .top-menu {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 5% 0; }
-    .first-window .top-menu .name-title-container {
-      max-width: 200px; }
-      .first-window .top-menu .name-title-container .myname {
-        color: #f4f4f4;
-        font-weight: 400; }
-      .first-window .top-menu .name-title-container .line-under-name {
-        width: 100%;
-        height: 1px;
-        background-color: #d33636;
-        padding: 0;
-        margin: 0 0 12px; }
-      .first-window .top-menu .name-title-container .whatido {
-        color: #f4f4f4;
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 1; }
-    .first-window .top-menu .menu-icon {
-      padding: 5px 0 0; }
-      .first-window .top-menu .menu-icon .bar {
-        width: 32px;
-        height: 3px;
-        margin: 6px;
-        background-color: #d33636; }
-  .first-window .lara-logo {
-    color: #f4f4f4;
-    font-size: 90px;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    text-align: center; }
-  .first-window .intro-text {
-    color: #f4f4f4;
-    font-size: 16px;
-    font-weight: 200;
-    text-align: center;
-    max-width: 500px;
-    padding: 10px;
-    margin: 0 auto; }
-    .first-window .intro-text span {
-      color: #d33636; }
-  .first-window .buttons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+  background-repeat: repeat-y; }
+  #header .max-w {
+    max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
-    align-items: center;
-    position: absolute;
-    bottom: 8vh;
-    left: 50%;
-    transform: translateX(-50%); }
-    .first-window .buttons [class^='button-'] {
-      width: 150px;
-      padding: 10px;
-      border: 2px solid;
-      border-radius: 3px;
-      margin: 0 0 15px;
+    position: relative; }
+    #header .max-w .top-menu {
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px 5% 0; }
+      #header .max-w .top-menu .name-title-container {
+        max-width: 200px; }
+        #header .max-w .top-menu .name-title-container .myname {
+          color: #f4f4f4;
+          font-weight: 400; }
+        #header .max-w .top-menu .name-title-container .line-under-name {
+          width: 100%;
+          height: 1px;
+          background-color: #d33636;
+          padding: 0;
+          margin: 0 0 12px; }
+        #header .max-w .top-menu .name-title-container .whatido {
+          color: #f4f4f4;
+          font-size: 20px;
+          font-weight: 200;
+          line-height: 1; }
+      #header .max-w .top-menu .menu-labels {
+        display: none; }
+      #header .max-w .top-menu .menu-icon {
+        padding: 5px 0 0; }
+        #header .max-w .top-menu .menu-icon .bar {
+          width: 32px;
+          height: 3px;
+          margin: 6px;
+          background-color: #d33636; }
+    #header .max-w .lara-logo {
       color: #f4f4f4;
-      font-weight: 200; }
-    .first-window .buttons .button-red {
-      background-color: rgba(211, 54, 54, 0.7);
-      border-color: rgba(211, 54, 54, 0.7); }
-    .first-window .buttons .button-white {
-      background-color: transparent;
-      border-color: rgba(244, 244, 244, 0.7); }
-  .first-window .icon-arrow {
-    height: 30px;
-    width: auto;
-    position: absolute;
-    bottom: 3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.7; }
+      font-size: 90px;
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      text-align: center; }
+    #header .max-w .intro-text {
+      color: #f4f4f4;
+      font-size: 16px;
+      font-weight: 200;
+      text-align: center;
+      max-width: 500px;
+      padding: 10px;
+      margin: 0 auto; }
+      #header .max-w .intro-text span {
+        color: #d33636; }
+    #header .max-w .buttons-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 80%;
+      max-width: 500px;
+      padding: 0 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%); }
+      #header .max-w .buttons-wrap [class^='button-'] {
+        width: 150px;
+        padding: 10px;
+        margin: 0 15px 20px;
+        border: 2px solid;
+        border-radius: 3px;
+        color: #f4f4f4;
+        font-weight: 200; }
+      #header .max-w .buttons-wrap .button-red {
+        background-color: rgba(211, 54, 54, 0.7);
+        border-color: rgba(211, 54, 54, 0.7); }
+      #header .max-w .buttons-wrap .button-white {
+        background-color: transparent;
+        border-color: rgba(244, 244, 244, 0.7); }
+    #header .max-w .icon-arrow {
+      height: 30px;
+      width: auto;
+      position: absolute;
+      bottom: 3%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.7; }
