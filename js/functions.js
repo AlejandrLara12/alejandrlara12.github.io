@@ -83,7 +83,7 @@ $(window).scroll(function(){
     if( wScroll > ($('#header').offset().top - $(window).height()) ){
       // $('.record-container').css({'background-position':'center '+ (wScroll - $('.record-container').offset().top)  +'px'});
       //console.log('yo');
-      $('.first-window').css({'background-position':'center -'+ wScroll/5 +'px'});
+      $('#header').css({'background-position':'center -'+ wScroll/5 +'px'});
     }
 });
 
