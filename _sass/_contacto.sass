@@ -1,0 +1,43 @@
+.wrap-contacto
+  height: auto
+  padding: 50px
+  background:
+    image: url("../img/bg-img/bg-blur-2.jpg")
+    position: center center
+    size: cover
+    attachment: fixed
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  .twt-icon
+    width: 12vw
+    max-width: 120px
+    min-width: 40px
+    background-color: rgb(29, 161, 242)
+    border-radius: 50%
+    padding: 20px
+    //border-right: 2px solid $white
+
+    svg
+      width: 100%
+      height: auto
+      path
+        fill: $white
+        //fill: rgb(29, 161, 242)
+
+  .text-contact
+    padding: 20px
+    .user-name
+      color: rgb(29, 161, 242)
+      font-family: $accent-font
+      font-size: 1.8em
+      text-shadow: $text-shadow
+      a
+        color: inherit
+        text-decoration: none
+    .msg-contact
+      font-size: 0.9em
+      color: transparentize($white, 0.2)
+      font-weight: 100

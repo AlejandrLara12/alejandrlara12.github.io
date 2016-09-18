@@ -1,0 +1,145 @@
+
+#header
+  width: 100%
+  height: 100vh
+  min-height: 540px
+  background:
+    image: url(/img/bg-img/desk-black-small.jpg)
+    size: cover
+    //position: bottom 0px
+    position: center 0px
+    attachment: fixed
+  background-repeat: repeat-y
+
+  .max-w
+    @extend .section-center
+    height: 100%
+    position: relative
+
+    .top-menu
+      display: flex
+      flex-direction: row
+      box-sizing: border-box
+      justify-content: space-between
+      width: 100%
+      padding: 20px 5% 0
+
+
+      .name-title-container
+        max-width: 200px
+        .myname
+          color: $white
+          font-weight: 400
+
+        .line-under-name
+          width: 100%
+          height: 1px
+          background-color: $accent-color
+          padding: 0
+          margin: 0 0 12px
+
+
+        .whatido
+          color: $white
+          font-size: 20px
+          font-weight: 200
+          line-height: 1
+
+      .menu-labels
+        display: none
+
+      .menu-icon
+        padding: 5px 0 0
+        .bar
+          width: 32px
+          height: 3px
+          margin: 6px
+          background-color: $accent-color
+
+    .lara-logo
+      color: $white
+      font-size: 90px
+      text-transform: uppercase
+      font-family: $cool-font
+      font-weight: 300
+      text-align: center
+
+    .logo-img
+      height: 35vh
+      text-align: center
+      min-height: 130px
+      padding: 20px 0 0
+
+      svg
+        height: 100%
+        width: auto
+        opacity: 0.7
+        //path
+        .logo-circle
+          fill: $accent-color
+        .logo-inside-circle
+          fill: $accent-color
+
+        .logo-frame
+          //stroke: $accent-color
+          stroke: $white
+
+        .logo-inside-frame
+          //fill: $accent-color
+          fill: $white
+
+    .intro-text
+      color: $white
+      font-size: 16px
+      font-weight: 200
+      text-align: center
+      max-width: 380px
+      padding: 10px
+      margin: 0 auto
+
+      span
+        color: $accent-color
+
+    .buttons-wrap
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      width: 80%
+      max-width: 500px
+      padding: 0 20px
+      text-align: center
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 8%
+      left: 50%
+      transform: translateX(-50%)
+
+
+      [class^='button-']
+        width: 150px
+        padding: 10px
+        margin: 0 15px 20px
+        border: 2px solid
+        border-radius: 3px
+        color: $white
+        font-weight: 200
+
+      .button-red
+        background-color: transparentize($accent-color, 0.3)
+        border-color: transparentize($accent-color, 0.3)
+
+      .button-white
+        border-color: transparentize($white, 0.5)
+        //background-color: transparentize($white, 0.9)
+        &:hover
+          //background-color: transparentize($white, 0.8)
+
+    .icon-arrow
+      height: 30px
+      width: auto
+      position: absolute
+      bottom: 3%
+      left: 50%
+      transform: translateX(-50%)
+      opacity: 0.7
